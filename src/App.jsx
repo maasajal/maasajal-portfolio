@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
           MaaSajal Portfolio
         </h1>
       </main>
+      <Footer />
     </div>
   );
 };
