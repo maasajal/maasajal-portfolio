@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="my-12">
+    <div id="about" className="my-12">
       <SectionTitle
         title={"About Me"}
         intro={
@@ -14,7 +14,11 @@ const About = () => {
       />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12">
         <div className="relative group overflow-hidden rounded-xl">
-          <img src={sajal} alt="MaaSajal Photo" className="rounded-xl transform transition-transform duration-500 group-hover:scale-110" />
+          <img
+            src={sajal}
+            alt="MaaSajal Photo"
+            className="rounded-xl transform transition-transform duration-500 group-hover:scale-110"
+          />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
             <div className="space-x-4 text-white text-4xl flex gap-5">
               <a
@@ -44,8 +48,11 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-4xl">
-          <h1 className="mb-5 text-5xl font-bold font-PlayFair">
+        <div className="max-w-4xl space-y-5">
+          <h2 className="text-5xl font-PlayFair font-bold">
+            Hi, My name is <span className="text-sky-400">Abdullah Sajal</span>
+          </h2>
+          <h1 className="mb-5 text-3xl font-bold font-PlayFair">
             I am a{" "}
             <span className="text-sky-400">
               <Typewriter
@@ -75,12 +82,18 @@ const About = () => {
             esteemed professionals. I hold a Bachelor of Science in Software
             Engineering.
           </p>
-          <a
-            href="/hire"
-            className="btn btn-outline text-white hover:text-blue-400"
-          >
-            Hire Me
-          </a>
+          <div className="flex space-x-4">
+            <a
+              href="/Abdullah_Sajal_Resume.pdf"
+              download
+              className="btn btn-outline hover:text-blue-400"
+            >
+              Download Resume
+            </a>
+            <a href="/hire" className="btn btn-outline hover:text-blue-400">
+              Hire Me
+            </a>
+          </div>
         </div>
       </section>
     </div>
