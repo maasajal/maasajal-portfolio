@@ -1,0 +1,21 @@
+.vertical-timeline-element-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .vertical-timeline-element-content {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    border-right-color: #fff;
+  }

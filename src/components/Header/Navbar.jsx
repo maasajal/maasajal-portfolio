@@ -1,3 +1,4 @@
+import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/images/my-logo.png";
 const Navbar = () => {
   return (
@@ -26,13 +27,18 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 capitalize"
             >
               {navLinks.map((nav) => (
-                <a
-                  key={nav.path}
-                  href={nav.path}
-                  className="text-black hover:text-blue-400"
-                >
-                  {nav.navName}
-                </a>
+                <li key={nav.path}>
+                  <Link
+                    to={nav.path}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="text-blue-400"
+                    className="text-black hover:text-blue-400"
+                  >
+                    {nav.navName}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -43,13 +49,18 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 uppercase font-bold">
             {navLinks.map((nav) => (
-              <a
-                key={nav.path}
-                href={nav.path}
-                className="hover:text-blue-400 hover:bg-white p-2 rounded-lg"
-              >
-                {nav.navName}
-              </a>
+              <li key={nav.path}>
+                <Link
+                  to={nav.path}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  activeClass="text-blue-400"
+                  className="text-black hover:text-blue-400"
+                >
+                  {nav.navName}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -68,31 +79,31 @@ const Navbar = () => {
 const navLinks = [
   {
     navName: "Home",
-    path: "/",
+    path: "home",
   },
   {
     navName: "About Me",
-    path: "#about",
+    path: "about",
   },
   {
     navName: "Skills",
-    path: "#skills",
+    path: "skills",
   },
   {
     navName: "Education",
-    path: "#education",
+    path: "education",
   },
   {
     navName: "Experiences",
-    path: "#experiences",
+    path: "experiences",
   },
   {
     navName: "Projects",
-    path: "#projects",
+    path: "projects",
   },
   {
     navName: "Contact Me",
-    path: "#contact",
+    path: "contact",
   },
 ];
 export default Navbar;

@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
+import Education from "./components/Education/Education";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import Projects from "./components/Projects/Projects";
@@ -13,6 +14,7 @@ const App = () => {
       <main className="container mx-auto px-3 md:px-0">
         <About />
         <Skills />
+        <Education />
         <Projects />
       </main>
       <Footer />
