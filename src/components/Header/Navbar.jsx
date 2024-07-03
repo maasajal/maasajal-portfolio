@@ -75,6 +75,10 @@ const navLinks = [
     path: "#about",
   },
   {
+    navName: "Skills",
+    path: "#skills",
+  },
+  {
     navName: "Education",
     path: "#education",
   },
@@ -85,10 +89,6 @@ const navLinks = [
   {
     navName: "Projects",
     path: "#projects",
-  },
-  {
-    navName: "Skills",
-    path: "#skills",
   },
   {
     navName: "Contact Me",

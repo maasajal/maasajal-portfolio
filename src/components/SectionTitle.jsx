@@ -4,7 +4,7 @@ const SectionTitle = ({ title, intro }) => {
       <h2 className="text-3xl font-PlayFair font-bold border-b border-blue-400 w-fit mx-auto pb-5">
         {title}
       </h2>
-      <p className="leading-8">{intro}</p>
+      <p className="leading-8 max-w-xl mx-auto">{intro}</p>
     </div>
   );
 };
