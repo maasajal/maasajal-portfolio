@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
@@ -23,15 +25,26 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
-          alert("Message sent successfully!");
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Message sent successfully!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
-          alert("An error occurred, please try again.");
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: `An error occurred. ${error.text}`,
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       );
-
-    // e.target.reset();
+    e.target.reset();
   };
 
   return (
