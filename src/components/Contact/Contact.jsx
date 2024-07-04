@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { IoIosSend } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { VscCallOutgoing } from "react-icons/vsc";
+import { MdOutlineMailOutline } from "react-icons/md";
+import SectionTitle from "../SectionTitle";
 
 const Contact = () => {
   const form = useRef();
@@ -30,10 +35,16 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="my-12 p-8 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
+    <div
+      id="contact"
+      className="my-12 px-8 py-20 bg-sky-100 rounded-lg shadow-md"
+    >
+      <SectionTitle
+        title={"Contact Me"}
+        intro={"Feel free to contact me for any feedback or hire me!"}
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -46,7 +57,7 @@ const Contact = () => {
             <input
               type="text"
               name="user_name"
-              className="w-full p-2 border border-gray-300 rounded-md"
+              className="w-full p-2 border border-gray-300 rounded-md bg-transparent"
               required
             />
           </div>
@@ -57,7 +68,7 @@ const Contact = () => {
             <input
               type="email"
               name="user_email"
-              className="w-full p-2 border border-gray-300 rounded-md"
+              className="w-full p-2 border border-gray-300 rounded-md bg-transparent"
               required
             />
           </div>
@@ -67,7 +78,7 @@ const Contact = () => {
             </label>
             <textarea
               name="message"
-              className="w-full p-2 border border-gray-300 rounded-md"
+              className="w-full p-2 border border-gray-300 rounded-md bg-transparent"
               rows="5"
               required
             ></textarea>
@@ -77,27 +88,42 @@ const Contact = () => {
               type="submit"
               className="btn btn-outline hover:text-blue-400 uppercase"
             >
-              Send Message
+              Send <IoIosSend className="text-xl" />
             </button>
           </div>
         </form>
         <div className="border-l-2 space-y-10">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-3xl uppercase text-end">Address</h4>
-            <address>
-              Resiinankatu 1 <br /> 33560, Tampere, Finland
-            </address>
+            <h4 className="font-bold text-2xl uppercase text-end">Address</h4>
+            <a
+              href="https://maps.app.goo.gl/7tVD44WgR25PHiHf7"
+              target="_blank"
+              className=" flex items-center gap-3"
+            >
+              <FaLocationDot className="text-2xl" />
+              <address>
+                Resiinankatu 1 <br /> 33560, Tampere, Finland
+              </address>
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-3xl uppercase text-end">Phone</h4>
-            <a href="tel:+358465896030">+358465896030</a>
+            <h4 className="font-bold text-2xl uppercase text-end">Phone</h4>
+            <a href="tel:+358465896030" className=" flex items-center gap-3">
+              {" "}
+              <VscCallOutgoing className="text-2xl" /> +358465896030
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-3xl uppercase text-end">Email</h4>
-            <a href="mailto:maas.sajal@gmail.com">maas.sajal@gmail.com</a>
+            <h4 className="font-bold text-2xl uppercase text-end">Email</h4>
+            <a
+              href="mailto:maas.sajal@gmail.com"
+              className=" flex items-center gap-3"
+            >
+              <MdOutlineMailOutline className="text-2xl" /> maas.sajal@gmail.com
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
-            <h4 className="font-bold text-3xl uppercase text-end">Social</h4>
+            <h4 className="font-bold text-2xl uppercase text-end">Social</h4>
             <div className="flex items-center gap-5">
               <a
                 href="https://www.linkedin.com/in/maa-sajal"

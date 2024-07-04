@@ -16,10 +16,10 @@ const Projects = () => {
             key={index}
             className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg space-y-5"
           >
-            <span className="ml-2 text-lg font-semibold">
+            <span className="ml-2 font-semibold">
               {project.projectDate}
             </span>
-            <h2 className="ml-2 text-lg font-semibold">{project.title}</h2>
+            <h2 className="text-2xl font-bold text-center">{project.title}</h2>
             {project.image && (
               <div className="relative group overflow-hidden rounded-xl">
                 <img
