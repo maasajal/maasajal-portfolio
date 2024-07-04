@@ -1,5 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/images/my-logo.png";
+import { FaDownload, FaHireAHelper } from "react-icons/fa";
 const Navbar = () => {
   return (
     <header className="bg-[#87CEEB55] z-20 fixed w-full text-white">
@@ -66,11 +67,22 @@ const Navbar = () => {
         </div>
         <div className="navbar-end flex gap-4">
           <a
-            href="/hire"
+            href="/Abdullah_Sajal_Resume.pdf"
+            download
             className="btn btn-outline text-white hover:text-blue-400"
           >
-            Hire Me
+            <FaDownload /> CV
           </a>
+          <Link
+            to={"contact"}
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="text-blue-400"
+            className="btn btn-outline text-white hover:text-blue-400"
+          >
+            <FaHireAHelper /> Hire
+          </Link>
         </div>
       </div>
     </header>

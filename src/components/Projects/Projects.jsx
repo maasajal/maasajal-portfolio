@@ -1,3 +1,4 @@
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
 import projects from "./projects";
 const Projects = () => {
@@ -30,27 +31,32 @@ const Projects = () => {
                   <div className="flex flex-wrap items-center justify-center gap-5 space-x-4 z-20">
                     <a
                       href={project.liveLink}
+                      target="_blank"
                       className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
                     >
-                      Live Demo
+                      Live Demo <FaExternalLinkAlt />
                     </a>
                     <a
                       href={project.clientRepo}
+                      target="_blank"
                       className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
                     >
-                      Client Repo
+                      <FaGithub /> Client
                     </a>
                     <a
                       href={project.serverRepo}
+                      target="_blank"
                       className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
                     >
-                      Server Repo
+                      <FaGithub /> Server
                     </a>
                   </div>
                 </div>
               </div>
             )}
-            <p className="leading-8 text-justify flex-grow">{project.description}</p>
+            <p className="leading-8 text-justify flex-grow">
+              {project.description}
+            </p>
             <div
               tabIndex={0}
               className="collapse collapse-arrow border-base-300 bg-base-200 border"

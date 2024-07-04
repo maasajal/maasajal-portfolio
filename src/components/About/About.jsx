@@ -1,7 +1,14 @@
 import SectionTitle from "../SectionTitle";
 import sajal from "../../assets/images/sajal.jpg";
 import { Typewriter } from "react-simple-typewriter";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaDownload,
+  FaFacebook,
+  FaGithub,
+  FaHireAHelper,
+  FaLinkedin,
+} from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -88,11 +95,18 @@ const About = () => {
               download
               className="btn btn-outline hover:text-blue-400"
             >
-              Download Resume
+              <FaDownload /> Resume
             </a>
-            <a href="/hire" className="btn btn-outline hover:text-blue-400">
-              Hire Me
-            </a>
+            <Link
+              to={"contact"}
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="text-blue-400"
+              className="btn btn-outline hover:text-blue-400"
+            >
+              <FaHireAHelper /> Hire
+            </Link>
           </div>
         </div>
       </section>
