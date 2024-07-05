@@ -39,7 +39,7 @@ const Experiences = () => {
       />
       <section className="py-12">
         <h2 className="text-3xl font-bold text-center mb-8">
-          Technical Experience
+          Work Experiences
         </h2>
         <VerticalTimeline>
           {experiences.map((exp, index) => (
