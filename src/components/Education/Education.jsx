@@ -39,7 +39,7 @@ const Education = () => {
       startDate: "January 2006",
       endDate: "March 2011",
       description:
-        "I successfully completed my Higher Secondary Certificate (HSC) from Hamidpur Al-Hera Degree College, Jessore, Bangladesh",
+        "I successfully completed my Secondary School Certificate (SSC) from Khajura Khathaltala High School, Manirampur, Jessore, Bangladesh",
     },
   ];
 

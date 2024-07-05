@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="my-12 px-8 py-20 bg-sky-100 rounded-lg shadow-md"
+      className="my-12 md:px-8 py-20 bg-sky-100 rounded-lg shadow-md"
     >
       <SectionTitle
         title={"Contact Me"}
@@ -61,7 +61,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="space-y-4 mx-auto w-full px-10"
+          className="space-y-4 mx-auto w-full px-5 md:px-10"
         >
           <div>
             <label className="block text-lg font-semibold mb-2 uppercase">
@@ -105,13 +105,13 @@ const Contact = () => {
             </button>
           </div>
         </form>
-        <div className="border-l-2 space-y-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-2xl uppercase text-end">Address</h4>
+        <div className="md:border-l-2 space-y-10 px-5">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap10 border-b-2 pb-10">
+            <h4 className="font-bold text-2xl uppercase">Address</h4>
             <a
               href="https://maps.app.goo.gl/7tVD44WgR25PHiHf7"
               target="_blank"
-              className=" flex items-center gap-3"
+              className="flex items-center gap-3"
             >
               <FaLocationDot className="text-2xl" />
               <address>
@@ -119,24 +119,24 @@ const Contact = () => {
               </address>
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-2xl uppercase text-end">Phone</h4>
-            <a href="tel:+358465896030" className=" flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap10 border-b-2 pb-10">
+            <h4 className="font-bold text-2xl uppercase md:text-end">Phone</h4>
+            <a href="tel:+358465896030" className="flex items-center gap-3">
               {" "}
               <VscCallOutgoing className="text-2xl" /> +358465896030
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 border-b-2 pb-10">
-            <h4 className="font-bold text-2xl uppercase text-end">Email</h4>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap10 border-b-2 pb-10">
+            <h4 className="font-bold text-2xl uppercase md:text-end">Email</h4>
             <a
               href="mailto:maas.sajal@gmail.com"
-              className=" flex items-center gap-3"
+              className="flex items-center gap-3"
             >
               <MdOutlineMailOutline className="text-2xl" /> maas.sajal@gmail.com
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
-            <h4 className="font-bold text-2xl uppercase text-end">Social</h4>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap10">
+            <h4 className="font-bold text-2xl uppercase md:text-end">Social</h4>
             <div className="flex items-center gap-5">
               <a
                 href="https://www.linkedin.com/in/maa-sajal"

@@ -16,9 +16,7 @@ const Projects = () => {
             key={index}
             className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg space-y-5"
           >
-            <span className="ml-2 font-semibold">
-              {project.projectDate}
-            </span>
+            <span className="ml-2 font-semibold">{project.projectDate}</span>
             <h2 className="text-2xl font-bold text-center">{project.title}</h2>
             {project.image && (
               <div className="relative group overflow-hidden rounded-xl">
@@ -29,27 +27,33 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 flex items-end pb-5 justify-center bg-black bg-opacity-40 transition-opacity duration-300 rounded-xl">
                   <div className="flex flex-wrap items-center justify-center gap-5 space-x-4 z-20">
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
-                    >
-                      Live Demo <FaExternalLinkAlt />
-                    </a>
-                    <a
-                      href={project.clientRepo}
-                      target="_blank"
-                      className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
-                    >
-                      <FaGithub /> Client
-                    </a>
-                    <a
-                      href={project.serverRepo}
-                      target="_blank"
-                      className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
-                    >
-                      <FaGithub /> Server
-                    </a>
+                    {project?.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
+                      >
+                        Live Demo <FaExternalLinkAlt />
+                      </a>
+                    )}
+                    {project?.clientRepo && (
+                      <a
+                        href={project?.clientRepo}
+                        target="_blank"
+                        className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
+                      >
+                        <FaGithub /> Client
+                      </a>
+                    )}
+                    {project?.serverRepo && (
+                      <a
+                        href={project?.serverRepo}
+                        target="_blank"
+                        className="btn btn-outline hover:bg-blue-400 hover:border-none rounded-full text-white"
+                      >
+                        <FaGithub /> Server
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

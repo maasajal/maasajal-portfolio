@@ -3,7 +3,7 @@ import logo from "../../assets/images/my-logo.png";
 import { FaDownload, FaHireAHelper } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <header className="bg-[#87CEEB55] z-20 fixed w-full text-white">
+    <header className="bg-[#87CEEB55] z-20 fixed w-full text-white pb-1">
       <div className="navbar py-6 container mx-auto font-PlayFair">
         <div className="navbar-start">
           <div className="dropdown">
@@ -69,7 +69,7 @@ const Navbar = () => {
           <a
             href="/Abdullah_Sajal_Resume.pdf"
             download
-            className="btn btn-outline text-white hover:text-blue-400"
+            className="btn btn-outline text-white hover:text-blue-400 hidden sm:flex"
           >
             <FaDownload /> CV
           </a>

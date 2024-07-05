@@ -43,6 +43,47 @@ const projects = [
     serverRepo: "https://github.com/maasajal/one-tower-server",
     projectDate: "June 2024",
   },
+
+  {
+    title: "Tampereen Sähköopiskelijat TASO RY at TAMK",
+    image: "https://i.ibb.co/2PzstbZ/taso.jpg",
+    description:
+      "TASO is a sub-association of the Tampere University of Applied Sciences (TAMK) student body (TAMKO). The majority of the club's members are electrical and automation students, but since any student at TAMK can become a member of TASO, many students from different degree programs have joined the strength of TASO.",
+    features: [
+      {
+        name: "Language",
+        details: "Translate the page using i18next",
+      },
+      {
+        name: "News Pages & Admin panel",
+        details:
+          "Student are able to see update news and share on facebook. Only admin can post, update and delete a news there.",
+      },
+      {
+        name: "Membership",
+        details:
+          "Student is able to join as a member through this website using Kida.app",
+      },
+    ],
+    technologies: [
+      {
+        name: "React Bootstrap",
+        details:
+          "React js used for front-end with Vite and Node.js used for backend with Express.js",
+      },
+      {
+        name: "Firebase",
+        details: "Firestore, Realtime database, Firebase Authentication",
+      },
+      {
+        name: "React calender & Carousel",
+        details: "Used react calender and React Carousel",
+      },
+    ],
+    liveLink: "https://taso-tamk-fi.netlify.app",
+    clientRepo: "https://github.com/maasajal/taso.tamk.fi",
+    projectDate: "June, 2022",
+  },
   {
     title: "Auto Librarian is an e-Library",
     image: "https://i.ibb.co/gD88G4m/library.jpg",
