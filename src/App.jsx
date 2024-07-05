@@ -2,6 +2,7 @@ import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
 import Contact from "./components/Contact/Contact";
 import Education from "./components/Education/Education";
+import Experiences from "./components/Experiences/Experiences";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import Projects from "./components/Projects/Projects";
@@ -18,6 +19,7 @@ const App = () => {
         <About />
         <Skills />
         <Education />
+        <Experiences />
         <Projects />
         <Contact />
       </main>
