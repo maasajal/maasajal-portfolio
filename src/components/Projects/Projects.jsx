@@ -1,6 +1,6 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
-import projects from "./projects";
+import projects from "./allProject";
 const Projects = () => {
   return (
     <div id="projects" className="my-12">
