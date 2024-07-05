@@ -19,7 +19,7 @@ const About = () => {
           "Who am I? In the programming world, I am a learner constantly honing my skills."
         }
       />
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-5 py-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
         <div className="relative group overflow-hidden rounded-xl">
           <img
             src={sajal}
@@ -56,8 +56,8 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-4xl space-y-5">
-          <h2 className="text-5xl font-PlayFair font-bold">
-            Hi, My name is <span className="text-sky-400">Abdullah Sajal</span>
+          <h2 className="text-2xl font-PlayFair font-bold leading-relaxed">
+            Hi, My name is <br /> <span className="text-5xl text-sky-400">Md Abdullah All Sajal</span>
           </h2>
           <h1 className="mb-5 text-3xl font-bold font-PlayFair">
             I am a{" "}

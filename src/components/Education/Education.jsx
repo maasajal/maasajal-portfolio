@@ -52,7 +52,6 @@ const Education = () => {
         }
       />
       <section className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
         <VerticalTimeline>
           {educationData.map((edu, index) => (
             <VerticalTimelineElement
