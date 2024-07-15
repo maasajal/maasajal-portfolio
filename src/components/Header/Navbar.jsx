@@ -1,6 +1,7 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/images/my-logo.png";
-import { FaDownload, FaHireAHelper } from "react-icons/fa";
+import { FaHireAHelper } from "react-icons/fa";
+import CV from "../CV/CV";
 const Navbar = () => {
   return (
     <header className="bg-[#87CEEB55] z-20 fixed w-full text-white pb-1">
@@ -48,7 +49,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-4 uppercase font-bold">
+          <ul className="menu menu-horizontal px-1 gap-1 uppercase font-bold">
             {navLinks.map((nav) => (
               <li key={nav.path}>
                 <Link
@@ -66,13 +67,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <a
-            href="/Abdullah_Sajal_Resume.pdf"
-            download
-            className="btn btn-outline text-white hover:text-blue-400 hidden sm:flex"
-          >
-            <FaDownload /> CV
-          </a>
+          <CV />
           <Link
             to={"contact"}
             smooth={true}
