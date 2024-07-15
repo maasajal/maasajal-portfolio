@@ -2,13 +2,13 @@ import SectionTitle from "../SectionTitle";
 import sajal from "../../assets/images/sajal.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import {
-  FaDownload,
   FaFacebook,
   FaGithub,
   FaHireAHelper,
   FaLinkedin,
 } from "react-icons/fa";
 import { Link } from "react-scroll";
+import ResumeDownload from "../Resume/ResumeDownload";
 
 const About = () => {
   return (
@@ -57,7 +57,8 @@ const About = () => {
         </div>
         <div className="max-w-4xl space-y-5">
           <h2 className="text-2xl font-PlayFair font-bold leading-relaxed">
-            Hi, My name is <br /> <span className="text-5xl text-sky-400">Md Abdullah All Sajal</span>
+            Hi, My name is <br />{" "}
+            <span className="text-5xl text-sky-400">Md Abdullah All Sajal</span>
           </h2>
           <h1 className="mb-5 text-3xl font-bold font-PlayFair">
             I am a{" "}
@@ -90,13 +91,7 @@ const About = () => {
             Engineering.
           </p>
           <div className="flex space-x-4">
-            <a
-              href="/Abdullah_Sajal_Resume.pdf"
-              download
-              className="btn btn-outline hover:text-blue-400"
-            >
-              <FaDownload /> Resume
-            </a>
+            <ResumeDownload />
             <Link
               to={"contact"}
               smooth={true}
