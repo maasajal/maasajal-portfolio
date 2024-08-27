@@ -16,10 +16,10 @@ const Skills = () => {
             name="my_tabs_1"
             role="tab"
             className="tab"
-            aria-label="Technical"
+            aria-label="Technical_Skills"
             defaultChecked
           />
-          <div role="tabpanel" className="tab-content p-10">
+          <div role="tabpanel" className="tab-content py-10">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {skillSet.map((skill, index) => (
                 <div
@@ -48,9 +48,9 @@ const Skills = () => {
             name="my_tabs_1"
             role="tab"
             className="tab"
-            aria-label="Communication"
+            aria-label="Communication_Skills"
           />
-          <div role="tabpanel" className="tab-content p-10">
+          <div role="tabpanel" className="tab-content py-10">
             <div className="join join-vertical w-full">
               <div className="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" defaultChecked />
@@ -98,7 +98,7 @@ const Skills = () => {
             className="tab"
             aria-label="Teamwork"
           />
-          <div role="tabpanel" className="tab-content p-10">
+          <div role="tabpanel" className="tab-content py-10">
             <div className="join join-vertical w-full">
               <div className="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" defaultChecked />
