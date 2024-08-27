@@ -10,13 +10,13 @@ const Skills = () => {
         }
       />
       <section className="py-12">
-        <div role="tablist" className="tabs tabs-bordered tabs-lg">
+        <div role="tablist" className="tabs tabs-bordered tabs-md">
           <input
             type="radio"
             name="my_tabs_1"
             role="tab"
             className="tab"
-            aria-label="Technical_Skills"
+            aria-label="Technical"
             defaultChecked
           />
           <div role="tabpanel" className="tab-content p-10">
@@ -48,7 +48,7 @@ const Skills = () => {
             name="my_tabs_1"
             role="tab"
             className="tab"
-            aria-label="Communication_Skills"
+            aria-label="Communication"
           />
           <div role="tabpanel" className="tab-content p-10">
             <div className="join join-vertical w-full">
