@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-blue-400 text-white border-b">
-        <div className="footer container mx-auto px-10 md:px-0 py-10">
+        <div className="footer container mx-auto px-10 py-10">
           <aside>
             <img src={logo} alt="MaaSajal Logo" />
             <p>

@@ -18,9 +18,9 @@ const App = () => {
       <main className="container mx-auto px-3 md:px-0">
         <About />
         <Skills />
-        <Education />
-        <Experiences />
         <Projects />
+        <Experiences />
+        <Education />
         <Contact />
       </main>
       <Footer />

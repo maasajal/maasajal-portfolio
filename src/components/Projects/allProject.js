@@ -1,5 +1,80 @@
 const projects = [
   {
+    title: "RevBoots Solutions – A Modern Revenue Generation Platform",
+    image: "https://i.ibb.co/xz4rvMy/logo.png",
+    description:
+      "RevBoots Solutions – A Modern Revenue Generation PlatformThe RevBoost Solutions aims to be a solution that provides a simple solution to everything from managing client’s finances to ensuring accurate TAX and VAT, invoicing, and billing. There will be a clear description of how much money is being earned in which sector and how much money is being spent in which sector. Where will get a complete overview of their company's growth!",
+
+    features: [
+      {
+        name: "Income & Expenses Tracking",
+        details:
+          "Easily monitor and record all income and expenses to maintain a clear overview of financial flows, helping businesses stay organized and financially healthy.",
+      },
+      {
+        name: "Live Revenue Growth & Comparison",
+        details:
+          "Track real-time revenue growth with comparisons across periods to gauge business performance and make data-driven decisions.",
+      },
+      {
+        name: "Payroll, Invoicing & Billing management",
+        details:
+          "Simplify payroll processing, create invoices, and manage billing seamlessly to streamline financial operations and ensure timely payments.",
+      },
+      {
+        name: "VAT, TAX Calculation & Financial reports",
+        details: "Automate VAT and tax calculations while generating comprehensive financial reports to stay compliant and informed about business finances.",
+      }
+    ],
+    technologies: [
+      {
+        name: "React and Vite",
+        details:
+          "React and Vite create a highly efficient development environment with quick setup, rapid development, and optimized builds, perfect for developers who prioritize speed and a smooth workflow.",
+      },
+      {
+        name: "TypeScript",
+        details:
+          "Adds type safety, making the codebase more robust and maintainable.",
+      },
+      {
+        name: "Redux",
+        details:
+          "Manages complex state efficiently across the app.",
+      },
+      {
+        name: "Tailwind CSS",
+        details:
+          "Enables rapid styling with utility-first classes.",
+      },
+      {
+        name: "MUI (Material-UI)",
+        details:
+          "Offers a rich set of pre-built, accessible components for a polished design.",
+      },
+      {
+        name: "Node.js and Express.js",
+        details:
+          "Handles server-side logic and asynchronous processing. A flexible, minimalist framework for building RESTful APIs.",
+      },
+      {
+        name: "MongoDB and Mongoose",
+        details:
+          "Efficient handling of user data and apartment information with a robust database. Mongoose manages data modeling and interactions with MongoDB.",
+      },
+      {
+        name: "Firebase",
+        details:
+          "Adds secure user authentication and real-time database options.",
+      },
+    ],
+    liveLink: "https://revboost.business-easy.com",
+    clientRepo: "https://github.com/maasajal/revboost-solutions",
+    serverRepo: "https://github.com/maasajal/revboost-solutions-server",
+    projectDate: "November 2024",
+  },
+
+  {
     title: "One Tower (Building Management System)",
     image: "https://i.ibb.co/qdS9LFZ/apartmentforrent.jpg",
     description:
