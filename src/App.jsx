@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
 import Contact from "./components/Contact/Contact";
+import Map from "./components/Contact/Map";
 import Education from "./components/Education/Education";
 import Experiences from "./components/Experiences/Experiences";
 import Footer from "./components/Footer/Footer";
@@ -23,6 +24,7 @@ const App = () => {
         <Education />
         <Contact />
       </main>
+      <Map />
       <Footer />
     </div>
   );
