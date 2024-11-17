@@ -4,7 +4,7 @@ import { FaHireAHelper } from "react-icons/fa";
 import CV from "../CV/CV";
 const Navbar = () => {
   return (
-    <header className="bg-[#87CEEB55] z-20 fixed w-full text-white pb-1">
+    <header className="bg-[#87CEEB80] z-20 sticky top-0 w-full text-white pb-1">
       <div className="navbar py-6 container mx-auto font-PlayFair">
         <div className="navbar-start">
           <div className="dropdown">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     spy={true}
-                    activeClass="text-blue-400"
+                    activeClass="text-blue-500"
                     className="text-black hover:text-blue-400"
                   >
                     {nav.navName}
@@ -57,7 +57,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  activeClass="text-blue-400"
+                  activeClass="text-blue-500"
                   className="text-black hover:text-blue-400"
                 >
                   {nav.navName}
@@ -97,16 +97,16 @@ const navLinks = [
     path: "skills",
   },
   {
-    navName: "Education",
-    path: "education",
+    navName: "Projects",
+    path: "projects",
   },
   {
     navName: "Experiences",
     path: "experiences",
   },
   {
-    navName: "Projects",
-    path: "projects",
+    navName: "Education",
+    path: "education",
   },
   {
     navName: "Contact Me",
