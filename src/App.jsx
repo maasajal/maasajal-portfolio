@@ -16,7 +16,7 @@ const App = () => {
       <ParticleBG />
       <Navbar />
       <Banner />
-      <main className="container mx-auto px-3 md:px-0">
+      <main className="container mx-auto px-3">
         <About />
         <Skills />
         <Projects />

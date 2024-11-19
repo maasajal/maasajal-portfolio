@@ -4,8 +4,8 @@ import { FaHireAHelper } from "react-icons/fa";
 import CV from "../CV/CV";
 const Navbar = () => {
   return (
-    <header className="bg-[#87CEEB80] z-20 sticky top-0 w-full text-white pb-1">
-      <div className="navbar py-6 container mx-auto font-PlayFair">
+    <header className="bg-blue-300 z-20 sticky top-0 md:sticky md:-top-20 hover:-top-1 transition-all duration-300 w-full">
+      <div className="navbar container mx-auto font-PlayFair">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,8 +35,8 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     spy={true}
-                    activeClass="text-blue-500"
-                    className="text-black hover:text-blue-400"
+                    activeClass="text-blue-600"
+                    className="hover:text-blue-600 hover:bg-transparent"
                   >
                     {nav.navName}
                   </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-1 uppercase font-bold">
+          <ul className="menu menu-horizontal px-1 uppercase font-bold">
             {navLinks.map((nav) => (
               <li key={nav.path}>
                 <Link
@@ -57,8 +57,8 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  activeClass="text-blue-500"
-                  className="text-black hover:text-blue-400"
+                  activeClass="text-blue-600"
+                  className="hover:text-blue-600 hover:bg-transparent"
                 >
                   {nav.navName}
                 </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <CV />
+          {/* <CV /> */}
           <Link
             to={"contact"}
             smooth={true}
@@ -80,6 +80,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      <div className="md:absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[80px] border-r-[80px] md:border-t-[30px] border-transparent border-t-blue-300"></div>
     </header>
   );
 };
