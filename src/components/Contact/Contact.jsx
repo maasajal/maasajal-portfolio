@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="my-12 md:px-8 py-20 bg-sky-100 rounded-lg shadow-md"
+      className="my-12 md:px-8 py-20 bg-sky-100 rounded-lg shadow-md text-black"
     >
       <SectionTitle
         title={"Contact Me"}
@@ -99,7 +99,7 @@ const Contact = () => {
           <div className="text-end">
             <button
               type="submit"
-              className="btn btn-outline hover:text-blue-400 uppercase"
+              className="btn btn-outline text-black hover:text-blue-400 uppercase"
             >
               Send <IoIosSend className="text-xl" />
             </button>

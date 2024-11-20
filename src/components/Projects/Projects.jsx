@@ -10,7 +10,7 @@ const Projects = () => {
           "Explore my diverse portfolio showcasing innovative web applications and solutions, highlighting my proficiency in JavaScript, React.js, Node.js, and more."
         }
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10 text-black">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -61,40 +61,42 @@ const Projects = () => {
             <p className="leading-8 text-justify flex-grow">
               {project.description}
             </p>
-            <div
-              tabIndex={0}
-              className="collapse collapse-arrow border-base-300 bg-base-200 border"
-            >
-              <div className="collapse-title text-xl font-medium">
-                Core Features
+            <div className="text-white space-y-5">
+              <div
+                tabIndex={0}
+                className="collapse collapse-arrow border-base-300 bg-base-200 border"
+              >
+                <div className="collapse-title text-xl font-medium">
+                  Core Features
+                </div>
+                <div className="collapse-content">
+                  {project.features.map((feature, index) => (
+                    <div key={index} className="space-y-5">
+                      <p className="leading-8">
+                        <span className="font-semibold">{feature.name}:</span>{" "}
+                        {feature.details}{" "}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="collapse-content">
-                {project.features.map((feature, index) => (
-                  <div key={index} className="space-y-5">
-                    <p className="leading-8">
-                      <span className="font-semibold">{feature.name}:</span>{" "}
-                      {feature.details}{" "}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              tabIndex={1}
-              className="collapse collapse-arrow border-base-300 bg-base-200 border"
-            >
-              <div className="collapse-title text-xl font-medium">
-                Technologies Used
-              </div>
-              <div className="collapse-content">
-                {project.technologies.map((tech, index) => (
-                  <div key={index} className="space-y-4">
-                    <p className="leading-8">
-                      <span className="font-semibold">{tech.name}:</span>{" "}
-                      {tech.details}
-                    </p>
-                  </div>
-                ))}
+              <div
+                tabIndex={1}
+                className="collapse collapse-arrow border-base-300 bg-base-200 border"
+              >
+                <div className="collapse-title text-xl font-medium">
+                  Technologies Used
+                </div>
+                <div className="collapse-content">
+                  {project.technologies.map((tech, index) => (
+                    <div key={index} className="space-y-4">
+                      <p className="leading-8">
+                        <span className="font-semibold">{tech.name}:</span>{" "}
+                        {tech.details}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             {/* <div className="flex flex-wrap items-center justify-center gap-5 space-x-4">

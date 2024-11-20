@@ -59,7 +59,7 @@ const Education = () => {
               date={`${edu.startDate} - ${edu.endDate}`}
               iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
               icon={<FaGraduationCap />}
-              contentStyle={{ background: "#fff", color: "#333" }}
+              // contentStyle={{ background: "#fff", color: "#333" }}
               contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             >
               <h3 className="vertical-timeline-element-title">
@@ -68,7 +68,7 @@ const Education = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 {edu.degree}
               </h4>
-              <p>{edu.description}</p>
+              <p className="text-black">{edu.description}</p>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

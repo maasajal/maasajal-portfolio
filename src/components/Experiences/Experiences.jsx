@@ -53,8 +53,8 @@ const Experiences = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 {exp.company}
               </h4>
-              <p>{exp.description}</p>
-              <p>
+              <p className="text-black">{exp.description}</p>
+              <p className="text-black">
                 <strong>Technologies Used:</strong> {exp.technologies}
               </p>
             </VerticalTimelineElement>

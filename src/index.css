@@ -11,3 +11,10 @@ Paragraph: Loto */
 html {
   scroll-behavior: smooth;
 }
+body {
+  color: white;
+}
+.btn:hover {
+  background-color: transparent;
+  border-color: blue;
+}
