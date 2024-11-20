@@ -84,11 +84,11 @@ const About = () => {
             I am a dedicated recent graduate with over a year of experience as a
             software engineer. I have developed robust programming skills and
             possess a deep understanding of web development and advanced
-            technologies, including JavaScript, React.js, Node.js, Express.js,
-            Firebase, MongoDB, Vite, DaisyUI, and TailwindCSS. I am eager to
-            leverage my expertise in innovative projects and collaborate with
-            esteemed professionals. I hold a Bachelor of Science in Software
-            Engineering.
+            technologies, including JavaScript, TypeScript, React.js, Redux,
+            Vite, TailwindCSS, MUI, DaisyUI - Node.js, Express.js, Firebase,
+            MongoDB, Mongoose and so on. I am eager to leverage my expertise in
+            innovative projects and collaborate with esteemed professionals. I
+            hold a Bachelor of Science in Software Engineering.
           </p>
           <div className="flex space-x-4">
             <ResumeDownload />
