@@ -23,8 +23,9 @@ const projects = [
       },
       {
         name: "VAT, TAX Calculation & Financial reports",
-        details: "Automate VAT and tax calculations while generating comprehensive financial reports to stay compliant and informed about business finances.",
-      }
+        details:
+          "Automate VAT and tax calculations while generating comprehensive financial reports to stay compliant and informed about business finances.",
+      },
     ],
     technologies: [
       {
@@ -39,13 +40,11 @@ const projects = [
       },
       {
         name: "Redux",
-        details:
-          "Manages complex state efficiently across the app.",
+        details: "Manages complex state efficiently across the app.",
       },
       {
         name: "Tailwind CSS",
-        details:
-          "Enables rapid styling with utility-first classes.",
+        details: "Enables rapid styling with utility-first classes.",
       },
       {
         name: "MUI (Material-UI)",
@@ -72,6 +71,147 @@ const projects = [
     clientRepo: "https://github.com/maasajal/revboost-solutions",
     serverRepo: "https://github.com/maasajal/revboost-solutions-server",
     projectDate: "November 2024",
+  },
+
+  {
+    title: "BusinessEasy Accounting",
+    image: "https://i.ibb.co/W6GTPHc/accounting.jpg",
+    description:
+      "At BusinessEasy, our mission is to provide personalized and comprehensive financial solutions that empower our clients to focus on what they do best—running their businesses. We are committed to integrity, accuracy, and delivering results that exceed expectations.",
+
+    features: [
+      {
+        name: "Bookkeeping Services",
+        details:
+          "Maintain accurate records of financial transactions. Manage accounts payable and receivable, general ledger, and bank reconciliations.",
+      },
+      {
+        name: "Tax & VAT Services",
+        details:
+          "Prepare and file tax and VAT returns for businesses and individuals. Offer tax planning strategies to minimize liabilities and maximize tax benefits.",
+      },
+      {
+        name: "Payroll, Invoicing & Billing management",
+        details:
+          "Manage payroll processing, including employee payments, tax withholdings, and benefits administration. Prepare and file payroll taxes.",
+      },
+      {
+        name: "VAT, TAX Calculation & Financial reports",
+        details:
+          "Automate VAT and tax calculations while generating comprehensive financial reports to stay compliant and informed about business finances.",
+      },
+    ],
+    technologies: [
+      {
+        name: "React and Vite",
+        details:
+          "React and Vite create a highly efficient development environment with quick setup, rapid development, and optimized builds, perfect for developers who prioritize speed and a smooth workflow.",
+      },
+      {
+        name: "Tailwind CSS",
+        details: "Enables rapid styling with utility-first classes.",
+      },
+      {
+        name: "Daisy UI",
+        details:
+          "Offers a rich set of pre-built, accessible components for a polished design.",
+      },
+      {
+        name: "Node.js and Express.js",
+        details:
+          "Handles server-side logic and asynchronous processing. A flexible, minimalist framework for building RESTful APIs.",
+      },
+      {
+        name: "MongoDB",
+        details:
+          "Efficient handling of user data and apartment information with a robust database which manages data modeling and interactions with MongoDB.",
+      },
+      {
+        name: "Firebase",
+        details:
+          "Adds secure user authentication and real-time database options.",
+      },
+    ],
+    liveLink: "https://business-easy.com",
+    projectDate: "August 2024",
+  },
+
+  {
+    title: "Umrah Support: Best Umrah Package",
+    image: "https://i.ibb.co/J5b5jrs/umrah.jpg",
+    description:
+      "This project is a comprehensive and user-centric website designed to guide and assist individuals in planning their Umrah journey. It features dynamic components with elegant animations, Arabic-inspired designs, and responsive layouts. The platform provides detailed information about all-inclusive packages, visa processes, luxury accommodations, and essential preparation steps. With a focus on user experience, it includes interactive elements, cultural aesthetics, and direct contact options, making it a reliable and engaging resource for anyone embarking on a spiritual journey to Makkah and Madinah.",
+
+    features: [
+      {
+        name: "Book Spiritual Journey for Umrah",
+        details:
+          "Direct link for immediate booking via phone, available conditionally based on the device.",
+      },
+      {
+        name: "Packages Overview",
+        details:
+          "Detailed all-inclusive Umrah packages with comprehensive benefits.",
+      },
+      {
+        name: "Visa Guidance",
+        details:
+          "Step-by-step guidance on Umrah visa acquisition, especially for European residents.",
+      },
+      {
+        name: "Hotel Recommendations",
+        details:
+          "Featured luxury hotel options in Makkah and Medina for a seamless journey.",
+      },
+      {
+        name: "Workshop for Umrah",
+        details:
+          "Dedicated sections for preparation and workshops before the journey.",
+      },
+    ],
+    technologies: [
+      {
+        name: "Next JS",
+        details:
+          "React Next.js create a highly efficient development environment with quick setup, rapid development, and optimized builds, perfect for developers who prioritize speed and a smooth workflow.",
+      },
+      {
+        name: "TypeScript",
+        details:
+          "Adds type safety, making the codebase more robust and maintainable.",
+      },
+      {
+        name: "Redux",
+        details: "Manages complex state efficiently across the app.",
+      },
+      {
+        name: "Tailwind CSS",
+        details: "Enables rapid styling with utility-first classes.",
+      },
+      {
+        name: "MUI (Material-UI)",
+        details:
+          "Offers a rich set of pre-built, accessible components for a polished design.",
+      },
+      {
+        name: "Node.js and Express.js",
+        details:
+          "Handles server-side logic and asynchronous processing. A flexible, minimalist framework for building RESTful APIs.",
+      },
+      {
+        name: "MongoDB and Mongoose",
+        details:
+          "Efficient handling of user data and apartment information with a robust database. Mongoose manages data modeling and interactions with MongoDB.",
+      },
+      {
+        name: "Firebase",
+        details:
+          "Adds secure user authentication and real-time database options.",
+      },
+    ],
+    liveLink: "https://umrah.business-easy.com",
+    clientRepo: "https://github.com/maasajal/umrah",
+    projectDate: "December 2024",
   },
 
   {
